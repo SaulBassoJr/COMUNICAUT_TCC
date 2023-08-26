@@ -1,0 +1,18 @@
+*{
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: "Fira Code", sans-serif; /* Fall Back, caso o carregamento de uma fonte falhe a uma outra opção*/
+}
+
+body, h1, h2, h3, figure, input {
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    border: none;
+    font-family: inherit; /* herda a propriedade do pai */
+}
