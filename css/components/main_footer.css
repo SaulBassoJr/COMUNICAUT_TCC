@@ -1,0 +1,13 @@
+.main_footer {
+    display: flex;
+    justify-content: center;
+    background-color: #00BFFF;
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* .main_footer .icon {
+    margin-right: 20px;
+    margin-left: 20px;
+} */
