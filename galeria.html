@@ -11,7 +11,10 @@
     <link rel="stylesheet" href="css/components/main_header.css">
     <link rel="stylesheet" href="css/components/main_action.css">
     <link rel="stylesheet" href="css/components/main_section.css">
-    
+    <link rel="stylesheet" href="css/galeria/wrapper_galeria.css">
+    <link rel="stylesheet" href="css/galeria/galeria_card.css">
+    <link rel="stylesheet" href="css/galeria/modal_form.css">
+
     <link rel="stylesheet" href="css/components/main_footer.css">
 
 
@@ -25,13 +28,60 @@
         </nav>
     </header>
 
-    <section>
+    <section class="main_section">
+        <div class="wrapper_galeria">
+            <div class="div-galeria">
+                <h2 class="main_title">GALERIA</h2>
+                <div class="div-cards-galeria">
+                    <ul id="ulElement">
+                        <li>
+                            <button id="addCardBtn">Adicionar Cartão</button>
+                        </li>
+                    </ul>
+                </div>
+                
+                
+            </div>
+
+            <div class="div-prancha ">
+                <h2 class="main_title">PRANCHA</h2>
+                
+            </div>
+
+        </div>
 
     </section>
 
     <footer class="main_footer">
         <p>&copy2023 DevSaul DevAlmeida</p>
     </footer>
+
+    <div class="modal-container">
+        <button class="button2" id="closeButton">X</button>
+        <div class="modal-image-customization">
+            <div class="image-container">
+                <div class="image-title-container">
+                    <div id="fileInputContainer"></div>
+                    <img id="imgPreview" alt="Pré-visualização da imagem">
+                    <h1 id="titlePreview" class="title-preview">Título da imagem</h1>
+                </div>
+            </div>
+            <input type="file" id="fileInput" accept="image/*">
+            <span id="imageNameDisplay"></span>
+            <input type="file" id="audioInput" accept="audio/*">
+            <label class="inslabel">*Escolher cor de fundo:</label>
+            <input type="color" id="colorPicker" value="#ffffff">
+            <label class="inslabel">*Título do cartão:</label>
+            <input type="text" id="titleInput" placeholder="Insira o título do cartão">
+            <button id="playPauseButton">Reproduzir</button>
+            <audio id="audioElement" controls style="display: none;"></audio>
+        </div>
+        <button id="resetAllButton">Resetar Cartão</button>
+        <button id="addButton">Salvar Cartão</button>
+        
+    </div>
+
+    <script src="js/edicao-galeria.js"></script>
 
 </body>
 </html>
