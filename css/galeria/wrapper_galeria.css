@@ -1,0 +1,53 @@
+.wrapper_galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.wrapper_galeria .cardbutton {
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.wrapper_galeria .div-galeria {
+    width: 450px;
+    min-height: 550px;
+    max-height: auto;
+    text-align: center;
+    border: 2px solid #000;
+    background: #FFF;
+    padding: 10px 50px;
+}
+
+.wrapper_galeria .div-prancha {
+    width: 770px;
+    min-height: 550px;
+    max-height: auto;
+    text-align: center;
+    border: 2px solid #000;
+    background: #FFF;
+    padding: 10px 50px;
+}
+
+@media (max-width: 500px) {
+    .wrapper_galeria .project_card {
+        width: 200px;
+        height: 200px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .wrapper_galeria .project_card .icon{
+        width: 170px;
+        height: 170px;
+    }
+    
+    .wrapper_galeria .project_card .title {
+        margin-top: 5px;
+    }
+
+}
